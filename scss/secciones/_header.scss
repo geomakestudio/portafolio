@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    flex-direction: column;
+
+    img{
+      
+        margin: 30px;
+    }
+
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            padding: 5px;
+            padding: 0 15px;
+            color: $blanco;
+            &.texto-importante{
+                color: $amarilloMostaza;
+            }
+            a{
+                text-decoration: none;
+                color: $blanco;
+            }
+            &:hover{
+                font-weight: bolder;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+//Mediaquerys
+
+//Mobile First => Min-width
+//Mobile Last => Max-width
+
+@media (max-width: 860px){
+
+    header{
+        flex-direction: column;
+        img{
+            margin-left: 35px;
+        }
+
+    }
+}
+

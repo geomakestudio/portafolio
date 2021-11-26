@@ -1,0 +1,19 @@
+//Las variables van siempre arriba de todo!!!!!!!!
+@import 'variables/colores';
+
+*{
+  margin: 20;
+  padding: 10;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  body{
+      background-color: $azulOscuro;
+  }
+}
+
+
+//Secciones
+@import 'secciones/header';
+@import './secciones/main-index';
+@import './secciones/footer';
+
